@@ -108,6 +108,7 @@ header > h1 img{width: 60px;}
   right:50px;top:50px;
   font-size:30px;color:#fff;
   font-weight:bold;
+  display: none;
 }
 
 /*  푸터영역 서식 */
