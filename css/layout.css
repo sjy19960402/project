@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+/* 상단헤더서식 */
+header{
+  width:150px;
+  height:100%;
+  position:fixed;
+  left:0px;top:0px;
+  background:rgba(0,0,0,.7);
+  z-index:9999;
+}
+
+header > h1{
+  text-align:center;
+  padding-top:10px;
+  padding-left: 160px;
+  /* position:relative;
+  top:100px; */
+  color:#fff;
+  font-size:30px;
+}
+header > h1 img{width: 60px;}
+
+/* 내비게이션 서식 */
+.gnb{
+  transform: translateY(-20px);
+  text-align:center;
+}
+.gnb > ul > li{
+  text-align:center;
+  line-height:30px;
+  margin-bottom: 20px;
+}
+.gnb > ul > li > a{
+  font-size:14px;
+  text-transform: uppercase;
+  color:#fff;
+  transition:0.5s;
+}
+
+/* 해당 콘텐츠가 보일때 적용되는 메뉴서식 */
+.gnb > ul > li > a.on{
+  font-size:26px !important;
+  color: rgb(36, 79, 221);
+}
+
+/* 메인서식 */
+#con{
+  width:1200%;height:100vh;
+  display:flex; /* 자식요소인 section 가로배치 */
+  position:absolute;
+  top:0px;left:0px;
+}
+#con section{
+  width:100%;height:100vh;
+  position:relative;
+  background-position: center;
+  background-size: cover;
+}
+#con section h2{
+  position:absolute;
+  top:20px;left:240px;
+  font-size:50px;
+  font-weight: bold;
+}
+
+#sec01{
+  background:url('../images/portfolio.png') no-repeat;}
+#sec01 > h2{color:#9197cc;}
+
+#sec02{background:url('../images/casper.jpg') no-repeat;}
+#sec02 > h2{color:rgb(89, 128, 236);}
+
+#sec03{background:url('../images/espoir_mockup3.jpg') no-repeat;}
+#sec03 > h2{color:#ff0;}
+
+#sec04{background:url('../images/mockup_responsive.png') no-repeat;}
+#sec04 > h2{color:#ff0;}
+
+#sec05{background:url('../images/mockup_responsive2.png') no-repeat;}
+#sec05 > h2{color:rgb(255, 255, 255);}
+
+#sec06{background:url('../images/outback\ mockup_1.png') no-repeat;}
+#sec06 > h2{color:rgb(255, 255, 255);}
+
+#sec07{background:url('../images/outback\ mockup_2_1.png') no-repeat;}
+#sec07 > h2{color:rgb(255, 255, 255);}
+
+#sec08{background:url('../images/01_mockup.png') no-repeat;}
+#sec08 > h2{color:rgb(226, 112, 169);}
+
+#sec09{background:url('../images/02_mockup.png') no-repeat;}
+#sec09 > h2{color:rgb(226, 112, 169);}
+
+#sec10{background:url('../images/myapp_go.jpg') no-repeat;}
+#sec10 > h2{color:rgb(65, 83, 236);}
+
+#sec11{background:url('../images/myapp_go_2.jpg') no-repeat;}
+#sec11 > h2{color:rgb(65, 83, 236);}
+
+#sec12{background:url('../images/pocari.jpg') no-repeat;}
+#sec12 > h2{color:rgb(48, 68, 241);}
+
+/* 스크롤값 표시해주는 서식 */
+.status{
+  position:fixed;
+  z-index:1200;
+  right:50px;top:50px;
+  font-size:30px;color:#fff;
+  font-weight:bold;
+}
+
+/*  푸터영역 서식 */
+footer{
+  /* width:100%; */
+  width:calc(100% - 150px); /* 전체크기에서 150을 뺀 나머지값을 구해줌*/
+  position:fixed;
+  bottom:0px;left:150px;
+  background:rgba(0,0,0,.7);
+}
+footer > address{
+  line-height:50px;
+  text-align:center;
+  color:#fff;
+  font-family: "Noto Sans KR";
+}
